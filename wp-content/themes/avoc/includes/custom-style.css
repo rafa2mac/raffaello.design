@@ -1,0 +1,74 @@
+
+/* HEIGHT MENU */
+
+			header #logo { height: 58px;	 }
+			/*.open-nav { height: 58px; }
+			.open-nav .text { line-height: 58px;	 }*/
+			header.header-open:not(.header-transparent) nav#main-nav > ul > li > a { line-height: 58px; }
+			header.header-open:not(.header-transparent) nav#main-nav ul li > ul.sub-menu { top: calc(50% + 15px); }
+			/*#page-body { padding-top: 178px; }*/
+			header:after, header:before { top: -178px; height: 178px; }	
+			header.header-open:not(.header-transparent) + #hero, header.header-open:not(.header-transparent) + #page-body { margin-top: 178px; }
+			#header-filter, #header-share, #header-search { top: -178px;	 min-height: 178px; }
+			header.header-open:not(.header-transparent) #menu .open-filter, header.header-open:not(.header-transparent) #menu .open-share, header.header-open:not(.header-transparent) #menu .open-search, header.header-open:not(.header-transparent) #menu .menu-language { top: calc(29px + 2px); -webkit-transform: translateY(100%); -moz-transform: translateY(100%); -ms-transform: translateY(100%); -o-transform: translateY(100%); transform: translateY(100%); }
+			
+			header.header-open:not(.header-transparent) + #hero.hero-full { height: calc(100vh - 178px); }
+			header.margin-medium.header-open:not(.header-transparent) + #hero.hero-full { height: calc(100vh - 138px); }
+			header.margin-small.header-open:not(.header-transparent) + #hero.hero-full { height: calc(100vh - 118px); }
+			
+					@media only screen and (max-width: 781px) {
+						header #logo { height: 37px;	 }
+						header:after, header:before { top: -97px; height: 97px; }
+						header.header-open:not(.header-transparent) + #hero, header.header-open:not(.header-transparent) + #page-body { margin-top: 97px; }
+					}
+				
+/* CUSTOM FONTS */
+body {font-family: "Lato";font-weight: 300;font-size: 16px;line-height: 28px;}body strong,body b { font-weight: 700; }.widget_nav_menu ul.menu > li { font-weight: 700; }.widget_nav_menu ul.menu > li > .sub-menu li { font-weight: 300; }h1, .h1 {font-family: "Montserrat";font-weight: 400;font-size: 84px;line-height: 109px;letter-spacing: 0.08em;text-transform: uppercase;}h1 strong,h1 b { font-weight: 700; }#page-loader .loader, .inline-video:after { font-family:Montserrat; font-weight:400; text-transform: uppercase; letter-spacing: 0.08em; }h2, .h2 {font-family: "Montserrat";font-weight: 400;font-size: 52px;line-height: 67px;letter-spacing: 0.08em;text-transform: uppercase;}h2 strong,h2 b { font-weight: 700; }h3, .h3 {font-family: "Montserrat";font-weight: 400;font-size: 34px;line-height: 44px;letter-spacing: 0.08em;text-transform: uppercase;}h3 strong,h3 b { font-weight: 700; }h4, .h4 {font-family: "Montserrat";font-weight: 400;font-size: 24px;line-height: 31px;letter-spacing: 0.08em;text-transform: uppercase;}h4 strong,h4 b { font-weight: 700; }#reply-title { font-size: 24px;line-height: 31px; }h5, .h5 {font-family: "Montserrat";font-weight: 400;font-size: 20px;line-height: 26px;letter-spacing: 0.08em;text-transform: uppercase;}h5 strong,h5 b { font-weight: 700; }.woocommerce-MyAccount-navigation ul li a { font-size: 20px; line-height: 26px; }h6, .h6 {font-family: "Montserrat";font-weight: 400;font-size: 15px;line-height: 19px;letter-spacing: 0.08em;text-transform: uppercase;}h6 strong,h6 b { font-weight: 700; }legend { font-size: 15px; line-height: 19px; }.sr-button-text, #scroll-down, #backtotop, .entries-pagination li a, .single-pagination li a, #menu .open-filter, #menu .open-share, .menu-cart-content .cart-bottom .total .label { font-size: 12px;  }.price, .amount, .shop-container .shop-item .grid-button .sr-button-text, .shop-container .shop-item .grid-button .sr-button-text strong, ul.cart_list li .item-name { font-size: 13px;  }@media only screen and (max-width: 1024px) { body { font-size: 16px !important; line-height: 20px !important; }h1, .h1 { font-size: 72px !important; line-height: 93px !important; }h2, .h2 { font-size: 48px !important; line-height: 62px !important; }h3, .h3 { font-size: 30px !important; line-height: 39px !important; }h4, .h4 { font-size: 23px !important; line-height: 29px !important; }h5, .h5 { font-size: 19px !important; line-height: 24px !important; }h6, .h6 { font-size: 16px !important; line-height: 20px !important; } }@media only screen and (max-width: 781px) { body { font-size: 17px !important; line-height: 22px !important; }h1, .h1 { font-size: 50px !important; line-height: 65px !important; }h2, .h2 { font-size: 48px !important; line-height: 62px !important; }h3, .h3 { font-size: 28px !important; line-height: 36px !important; }h4, .h4 { font-size: 22px !important; line-height: 28px !important; }h5, .h5 { font-size: 18px !important; line-height: 23px !important; }h6, .h6 { font-size: 16px !important; line-height: 20px !important; } }@media only screen and (max-width: 481px) { body { font-size: 17px !important; line-height: 22px !important; }h1, .h1 { font-size: 41px !important; line-height: 53px !important; }h2, .h2 { font-size: 40px !important; line-height: 52px !important; }h3, .h3 { font-size: 26px !important; line-height: 33px !important; }h4, .h4 { font-size: 21px !important; line-height: 27px !important; }h5, .h5 { font-size: 18px !important; line-height: 23px !important; }h6, .h6 { font-size: 16px !important; line-height: 20px !important; } }.alttitle {font-family: Montserrat;font-weight: 400;letter-spacing: 0.04em;text-transform: none;}.alttitle b, .alttitle strong { font-weight: 700; }table caption, blockquote, .copyright, ul.filter li a, .blog-masonry-entry .blog-content .time, .blog-masonry-entry .post-sticky, .widget_rss .rss-date, .widget_rss cite,
+			.price, .amount, .woocommerce span.onsale,
+			.woocommerce-MyAccount-navigation ul li a { font-family: Montserrat;font-weight: 400;letter-spacing: 0.04em;}#blog-single .blog-meta .meta-author span, #blog-single .blog-meta .meta-category span, #blog-single .blog-meta .meta-author span, #blog-single .blog-meta .meta-tags span, .menu-cart-content .cart-bottom .total .label { font-family: Montserrat;font-weight: 400;}nav#main-nav ul li > a, .open-nav .text, .widget_nav_menu ul.menu li {font-family: Montserrat;font-weight: 400;font-size: 14px;letter-spacing: 0.12em;text-transform: uppercase;}.widget_calendar tfoot a, #menu .open-filter, #menu .open-share, #menu .menu-language a, #scroll-down, .single-pagination li a, .entries-pagination li a, .entries-pagination li span, .sr-button-text, .sr-button-text strong, #blog-comments .comment-reply-link, #blog-comments #cancel-comment-reply-link, #backtotop, table th, .woocommerce .cart-actions .button, .woocommerce .coupon input[type=submit], .woocommerce .checkout-coupon input[type=submit], .phatvideo-bg .mute-video, .phatvideo-bg .playpause-video {font-family: Montserrat;font-weight: 400;letter-spacing: 0.12em;text-transform: uppercase;}#blog-single .blog-meta .meta-author a, #blog-single .blog-meta .meta-category a, #blog-single .blog-meta .meta-tags a {font-family: Montserrat;font-weight: 400;text-transform: uppercase;}nav#main-nav ul li > ul.sub-menu li a {font-family: Montserrat;font-weight: 400;font-size: 13px;letter-spacing: 0.1em;text-transform: uppercase;}a.sr-button, input[type=submit], .button, a.button {font-family: Montserrat;font-weight: 400;letter-spacing: 0.1em;text-transform: uppercase;}label, form label {font-family: Lato;font-weight: 400;font-size: 13px;letter-spacing: 0.1em;text-transform: uppercase;}input[type=text], input[type=password], input[type=email], input[type=number], input[type=tel], textarea, select, .select2-container .select2-choice .select2-chosen {font-family: Montserrat;font-weight: 700;font-size: 16px;text-transform: none;} 
+
+/* COLOR */
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #00aeef !important; }
+input[type=submit], .button { background: #00aeef; }
+a { color: #00aeef; }
+.colored { color: #00aeef; }
+.widget_calendar tbody a:hover, .widget_calendar tbody a:focus { background: #00aeef; }
+nav#main-nav > ul:not(.hover-underline) > li:hover > a, nav#main-nav > ul:not(.hover-underline) > li.current-menu-item > a { color: #00aeef !important; }
+#backtotop:hover { color: #00aeef; }
+ul.filter li a.active, ul.filter li a:hover { color: #00aeef; }
+#blog-single .blog-meta .meta-author a:hover, #blog-single .blog-meta .meta-category a:hover, #blog-single .blog-meta .meta-tags a:hover { color: #00aeef; }
+.single-pagination li a:hover span	{ color: #00aeef; }
+.single-pagination li.backtoworks a:hover { color: #00aeef; }
+.entries-pagination li a:hover, .entries-pagination li.page span { color: #00aeef; }
+#blog-comments #cancel-comment-reply-link { color: #00aeef; }
+a.sr-button1:hover { background: #00aeef; }
+a.sr-button2 { background: #00aeef; }
+a.sr-button3:hover { background: #00aeef; }
+a.sr-button4 { background: #00aeef; }
+a.button:hover { background: #00aeef; }
+.inline-video:hover::before { color: #00aeef; }
+.inline-video .inline-iframe-container .close-inline-video:hover { color: #00aeef; }
+.tabs ul.tab-nav li a.active { color: #00aeef; }
+.toggle-item .toggle-title.toggle-active:after { color: #00aeef; }
+.toggle-item .toggle-title:hover:after { color: #00aeef; }
+.toggle-item .toggle-title:hover .toggle-name  { color: #00aeef; }	
+.toggle-item .toggle-title.toggle-active .toggle-name  { color: #00aeef; }
+#hero .page-title h1 a, #hero .page-title h2 a, #hero .page-title h3 a, #hero .page-title h4 a, #hero .page-title h5 a, #hero .page-title h6 a { color: #00aeef; }
+
+
+.wolf-caption a.caption-hover:hover h4, 
+.wolf-caption a.caption-hover:hover h5, 
+.wolf-caption a.caption-hover:hover h6, 
+.wolf-caption a.caption-hover:hover h3 { color: #00aeef; }	
+
+.shop-container .shop-item .grid-button .sr-button-text:hover,
+.woocommerce .cart-actions .button,
+.woocommerce .coupon input[type=submit], .woocommerce .checkout-coupon input[type=submit],
+.woocommerce .star-rating span,
+.woocommerce-MyAccount-navigation ul li a:hover, .woocommerce-MyAccount-navigation ul li.is-active a { color: #00aeef; }
+
+
+
+
+/* CUSTOM CSS (Theme Options) */
