@@ -75,14 +75,37 @@ a.button:hover { background: #00aeef; }
 
 
 
-/* MOBILE COLUMN SPACING FIX - About page only (page-id-28) - tightens the gap between the stacked Welcome/paragraph columns on mobile */
+/* MOBILE SPACING FIXES - About page only (page-id-28) */
 @media only screen and (max-width: 781px) {
-  .page-id-28 .column-section .column {
-    margin-top: 0px;
+ 
+  /* Reduce the big gaps above Welcome, after the intro paragraphs,
+     and around the Let's Get in Touch / Download Resume section */
+  .page-id-28 .spacer-big {
+    height: 40px;
   }
-  .page-id-28 .column-section .column .spacer.spacer-mini {
+ 
+  /* Welcome section (3 stacked columns) - keep tight, no extra gap */
+  .page-id-28 .column-section .column.one-third {
+    margin-top: 0;
+  }
+  .page-id-28 .column.one-third .spacer.spacer-mini {
     display: none;
   }
+ 
+  /* Let's Get in Touch / Download Resume section (2 stacked columns) -
+     restore a clear gap between the email block and the download block */
+  .page-id-28 .column-section .column.one-half:not(:first-child) {
+    margin-top: 40px;
+  }
+ 
 }
-
+ 
+/* Reduce the oversized grey padding around the profile photo section on mobile */
+@media only screen and (max-width: 781px) {
+  .page-id-28 .horizontal-inner {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+ 
  
