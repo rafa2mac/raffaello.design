@@ -72,3 +72,12 @@ a.button:hover { background: #00aeef; }
 
 
 /* CUSTOM CSS (Theme Options) */
+
+
+/* MOBILE COLUMN SPACING FIX - About page only (page-id-28) - tightens the gap between the stacked Welcome/paragraph columns on mobile */
+@media only screen and (max-width: 781px) {
+  .page-id-28 .column-section .column {
+    margin-top: 20px;
+  }
+}
+ 
