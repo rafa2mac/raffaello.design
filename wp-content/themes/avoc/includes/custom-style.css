@@ -74,14 +74,13 @@ a.button:hover { background: #00aeef; }
 /* CUSTOM CSS (Theme Options) */
 
 
-
 /* MOBILE SPACING FIXES - About page only (page-id-28) */
 @media only screen and (max-width: 781px) {
  
-  /* Reduce the big gaps above Welcome, after the intro paragraphs,
-     and around the Let's Get in Touch / Download Resume section */
+  /* Gaps above Welcome, after the intro paragraphs, before the envelope icon,
+     and after Download PDF - increased for more breathing room */
   .page-id-28 .spacer-big {
-    height: 40px;
+    height: 70px;
   }
  
   /* Welcome section (3 stacked columns) - keep tight, no extra gap */
@@ -93,18 +92,19 @@ a.button:hover { background: #00aeef; }
   }
  
   /* Let's Get in Touch / Download Resume section (2 stacked columns) -
-     restore a clear gap between the email block and the download block */
+     clear gap between the email block and the download block */
   .page-id-28 .column-section .column.one-half:not(:first-child) {
     margin-top: 40px;
   }
  
 }
  
-/* Reduce the oversized grey padding around the profile photo section on mobile */
+/* Profile photo section - reduce top space but keep enough bottom
+   padding for the background image to display fully, not cropped */
 @media only screen and (max-width: 781px) {
   .page-id-28 .horizontal-inner {
     padding-top: 40px !important;
-    padding-bottom: 40px !important;
+    padding-bottom: 350px !important;
   }
 }
  
